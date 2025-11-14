@@ -10,3 +10,15 @@ class Bookmark(models.Model):
     class Meta:
         verbose_name = '북마크'
         verbose_name_plural = '북마크목록'
+
+
+
+
+
+
+
+
+
+
+
+

@@ -22,8 +22,8 @@ from bookmark import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bookmark/',views.bookmark_list),
-    path('', views.bookmark_list, name='index'), # 1. 루트 경로('/')를 bookmark_list 뷰로 연결 (추가)
-    path('bookmark/', views.bookmark_list, name='list'),
+    path('bookmark/', views.bookmark_list), # 1. 루트 경로('/')를 bookmark_list 뷰로 연결 (추가)
+    path('bookmark/<int:pk)/', views.bookmark_detail ),
 
 
 ]

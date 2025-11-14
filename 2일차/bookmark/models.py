@@ -7,9 +7,14 @@ class Bookmark(models.Model):
     credits_at = models.DateTimeField('생성일',auto_now_add=True)
     updated_at = models.DateTimeField('수정일',auto_now=True)
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = '북마크'
         verbose_name_plural = '북마크목록'
+
+
 
 
 

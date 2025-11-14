@@ -22,6 +22,7 @@ from bookmark import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bookmark/',views.bookmark_list),
+    path('bookmark/<int:number>/',views.bookmark_detail),
 
 
 ]
